@@ -11,6 +11,11 @@ end
 pp directors_database
 
 def print_first_directors_movie_titles
+    mov_index = 0
+    while mov_index < directors_database[0][:movies].length do  
+      puts directors_database[0][:movies][mov_index]
+      mov_index += 1 
+    end 
 end
 
 
